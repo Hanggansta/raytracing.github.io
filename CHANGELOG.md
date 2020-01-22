@@ -1,13 +1,22 @@
 Change Log
 ====================================================================================================
 
-vNext (version TBD)
---------------------
+// Current to 522a200 2019-10-21
+
+v3.0.0 (in progress)
+---------------------
 Common
 - New: CMake configuration & build
-- New: File constants.h with portable math constants. Fixes #151.
-- Change: Replace pi with portable version. Fixes #207.
-- Change: Replace MAXFLOAT with (portable) infinity. Fixes #195.
+- New: File constants.h with portable math constants. Fixes [#151][].
+- New: `src/common` directory for code shared across books.
+- New: Common project-wide header: `src/common/rtweekend.h`
+- New: `vec3::write_color` - provides a robust output method for color data.
+- Change: Diffuse PDF computation uses random point _on_ sphere, rather than _inside_.
+- Change: Default floating-point type changed from `float` to `double`.
+- Change: Disable compile warnings for external `stb_image.h` on Windows.
+- Change: Replace pi with portable version. Fixes [#207][].
+- Change: Replace MAXFLOAT with (portable) infinity. Fixes [#195][].
+- Change: A _lot_ of code refactoring throughout.
 
 
 v2.0.0 (2019-10-07)
@@ -62,7 +71,7 @@ _Ray Tracing: The Next Week_
 - Fix: Text, Chapter 7, Changed `cornell_box` hittable array size to 5
 - Fix: Code and Text, Chapter 3, Changed `List[0]` to `List[i]` in `hittable_list::bounding_box()`
 - Fix: Code and Text, Chapter 3, Replaced `fmax` and `fmin` with `ffmax` and `ffmin`
-- Fix: Code, Add missing headers to constant_medium.h to fix g++ compiler error
+- Fix: Code, Add missing headers to `constant_medium.h` to fix g++ compiler error
 - New: raytracing.github.io/books/RayTracingTheNextWeek.html
 - Add: README.md, source README.md
 - Add: Markdeep page created for entire body of text
@@ -120,3 +129,7 @@ v1.42.0  (2018-08-26)
 ----------------------
 _Ray Tracing: The Next Week_
 - New: First GitHub release.
+
+
+
+[#195]: https://github.com/raytracing/raytracing.github.io/issues/#195
