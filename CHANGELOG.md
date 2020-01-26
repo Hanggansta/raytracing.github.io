@@ -1,7 +1,7 @@
 Change Log
 ====================================================================================================
 
-// Current to 522a200 2019-10-21
+// Current to 3791079 2019-11-12
 
 v3.0.0 (in progress)
 ---------------------
@@ -17,6 +17,24 @@ Common
 - Change: Replace pi with portable version. Fixes [#207][].
 - Change: Replace MAXFLOAT with (portable) infinity. Fixes [#195][].
 - Change: A _lot_ of code refactoring throughout.
+- New: `degrees_to_radians()` utility function.
+- Change: Lots more highlighting of changed code in books to aid reading.
+- Change: Improved random number generator utilities.
+- Change: Math typesetting fixes throughout the books.
+- Change: Header cleanup across the source code.
+- New: Added code listing captions, including source file name, for all books.
+- New: Added captions to all figures.
+- Change: Improved naming of auxilliary programs in _The Rest Of Your Life_ source.
+- Change: Cleaned up standard C++ header use.
+- Change: `ray_color()` function now has max depth passed in, rather than hard-coding it.
+- Fix: Fixed various minor problems in the text.
+- Change: Code in source and in book reformatted to a consistent 96-column line length.
+- Change: Books now use Markdeep's chapter indirection syntax.
+- Fix: Fixed bug in `noise_texture::value()`.
+- New: Clarified text around the ideal Lambertian distribution.
+- Change: added `random_in_unit_sphere()`, `random_unit_vector()`, `random_in_hemisphere()` to
+  vec3.h. Fixed places where we were using one but should have been using another.
+- Change: Updated several output images to match code updates.
 
 
 v2.0.0 (2019-10-07)
