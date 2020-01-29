@@ -10,31 +10,35 @@ Common
 - New: File constants.h with portable math constants. Fixes [#151][].
 - New: `src/common` directory for code shared across books.
 - New: Common project-wide header: `src/common/rtweekend.h`
-- New: `vec3::write_color` - provides a robust output method for color data.
+- New: `vec3::write_color` - provides a robust output method for color data (#93)
 - Change: Diffuse PDF computation uses random point _on_ sphere, rather than _inside_.
-- Change: Default floating-point type changed from `float` to `double`.
+- Change: Default floating-point type changed from `float` to `double` (#150)
 - Change: Disable compile warnings for external `stb_image.h` on Windows.
 - Change: Replace pi with portable version. Fixes [#207][].
-- Change: Replace MAXFLOAT with (portable) infinity. Fixes [#195][].
+- Change: Replace MAXFLOAT with (portable) infinity (#195, #216)
 - Change: A _lot_ of code refactoring throughout.
-- New: `degrees_to_radians()` utility function.
+- New: `degrees_to_radians()` utility function (#217)
 - Change: Lots more highlighting of changed code in books to aid reading.
 - Change: Improved random number generator utilities.
-- Change: Math typesetting fixes throughout the books.
-- Change: Header cleanup across the source code.
-- New: Added code listing captions, including source file name, for all books.
-- New: Added captions to all figures.
+- Change: Math typesetting fixes throughout the books (#13)
+- Change: Header cleanup across the source code (#218, #220)
+- New: Added code listing captions, including source file name, for all books (#238)
+- New: Added captions to all figures (#238)
 - Change: Improved naming of auxilliary programs in _The Rest Of Your Life_ source.
-- Change: Cleaned up standard C++ header use.
-- Change: `ray_color()` function now has max depth passed in, rather than hard-coding it.
+- Change: Cleaned up standard C++ header use (#19)
+- Change: `ray_color()` function now has max depth passed in, rather than hard-coding it (#143)
 - Fix: Fixed various minor problems in the text.
-- Change: Code in source and in book reformatted to a consistent 96-column line length.
+- Change: Code in source and in book reformatted to a consistent 96-column line length (#219)
 - Change: Books now use Markdeep's chapter indirection syntax.
 - Fix: Fixed bug in `noise_texture::value()`.
-- New: Clarified text around the ideal Lambertian distribution.
+- New: Clarified text around the ideal Lambertian distribution (#155)
 - Change: added `random_in_unit_sphere()`, `random_unit_vector()`, `random_in_hemisphere()` to
-  vec3.h. Fixed places where we were using one but should have been using another.
-- Change: Updated several output images to match code updates.
+  vec3.h. Fixed places where we were using one but should have been using another. (#145)
+- Change: General rework of the `vec3` header (#153, #156, #215)
+- Change: Updated several output images to match code updates
+- Change: Books general styling improvements (#197)
+- Change: Lots of code cleanup (#192)
+- Change: Clarify sphere intersection code, plus slight perf improvement (#113)
 
 
 v2.0.0 (2019-10-07)
