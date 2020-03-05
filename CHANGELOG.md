@@ -1,7 +1,7 @@
 Change Log
 ====================================================================================================
 
-// Current to 3791079 2019-11-12
+// Current to bae033d 2019-12-02
 
 v3.0.0 (in progress)
 ---------------------
@@ -39,6 +39,11 @@ Common
 - Change: Books general styling improvements (#197)
 - Change: Lots of code cleanup (#192)
 - Change: Clarify sphere intersection code, plus slight perf improvement (#113)
+- Change: Reworked Lambertian reflection text (#155)
+- Change: Added proper handling of front vs back face intersection
+- Add: Added progress output for main programs (#139)
+- Deleted: Several unused source files from `src/TheRestOfYourLife`
+- Change: `ray::point_at_parameter()` renamed to `ray::at()`
 
 
 v2.0.0 (2019-10-07)
